@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #636360;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #BDBAA4;
+}
+#search-form {
+    width: 95%;
+    margin: 2em auto;
+    transition: .5s;
+}
+input {
+    width: 100%;
+    background-color: #E3E5D5;
+    color: #636360;
+    border: none;
+    font-size: 16px;
+    padding: 1em .5em;
+    outline: none;
+    border-radius: .3em;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(99,99,96,0.66);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(99,99,96,0.66);
+    box-shadow: 0px 2px 2px 0px rgba(99,99,96,0.66);
+    transition: .6s;
+}
+input:focus {
+    background-color: #EFEFE8;
+}
+input::-webkit-input-placeholder {
+    color: #BDBAA4;
+}
+input::-moz-placeholder {
+    color: #BDBAA4;
+}
+input:-moz-placeholder {
+    color: #BDBAA4;
+}
+input:-ms-input-placeholder {
+    color: #BDBAA4;
+}
+#search-results {
+    width: 95%;
+    margin: 2em auto;
+    border-top: 1px solid #E3E5D5;
+    transition: .5s;
+}
+h6 {
+    text-align: center;
+}
+.input {
+    font-style: oblique;
+    font-weight: 400;
+}
+li {
+    padding: 1em .3em;
+    list-style: none;
+    border-bottom: 1px solid #E3E5D5;
+    text-transform: capitalize;
+}
+.city {
+    font-weight: 700;
+}
+.population {
+    float: right;
+    font-size: .7em;
+    line-height: 1.8em;
+    text-transform: lowercase;
+}
+.highlight {
+    background-color: #E3E5D5;
+}
+@media screen and (min-width: 480px) {
+    #search-form {
+        width: 80%;
+    }
+    #search-results {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 600px) {
+    * {
+        font-size: 20px;
+    }
+    input {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 800px) {
+    #search-form {
+        width: 60%;
+    }
+    #search-results {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #search-form {
+        width: 500px;
+    }
+    #search-results {
+        width: 500px;
+    }
+}
